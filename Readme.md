@@ -2,6 +2,7 @@
 
 * Студент: [Анатолий Галин](https://up.htmlacademy.ru/htmlcss/22/user/813109).
 * Наставник: [Александр Карташов].
+(https://htmlacademy.ru/profile/id77080)
 
 ---
 
