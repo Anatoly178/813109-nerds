@@ -1,14 +1,116 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
 <body>
-    
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="main-header-logo" href="index.html">
+          <img src="#" height="50" width="50" alt="Nёrd's">
+        </a>
+        <ul class="site-nav">
+         <li class="site-nav-item--active"><a href="#">Студия</a></li>
+         <li class="site-nav-item--active"><a href="#">Клиенты</a></li>
+         <li class="site-nav-current--active"><a href="catalog.html">Магазин</a></li>
+         <li class="site-nav-item--active"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-nav">
+          <li class="user-nav-item"><a href="#">Корзина</a></li>
+        </ul>
+    </nav>
+    </header>  
+    <main class="container">
+     <h1 class="page-title">Магазин готовых шаблонов</h1>
+     <section class="filter">
+         <h2 class="filter-title">Стоимость:</h2>
+         <!--здесь будет форма-->
+     </section>
+     <ul class="breadcrumbs">
+         <li class="breadcrumbs-current">По цене</li>
+         <li><a href="catalog.html">По типу</a></li>
+         <li><a href="catalog.html">По названию</a></li>
+         <!--Здесь кнопки вверх-вниз-->
+     </ul>
+     <section class="catalog">
+        <h2 class="visually-hidden">Список проектов</h2>
+        <!--Здесь будет форма-->
+        <ul class="catalog-list">
+         <li class="catalog-item">
+          <h3 class="catalog-title">SEDONA</h3>
+          <p class="catalog-description">Информационный сайт для туристов</p>
+          <a href="#" class="buttone">9900руб.</a>
+          <img src="#" alt="Сайт для туристов">
+         </li>
+         <li class="catalog-item">
+          <h3 class="catalog-title">PINK APP</h3>
+          <p class="catalog-description">Продуктовый лендинг приложения для iOS и Android</p>
+          <a href="#" class="buttone">9900руб.</a>
+          <a href="catalog-item">
+              <img src="#" alt="Лендинг">
+          </a>
+        </li>
+        <li class="catalog-item">
+          <h3 class="catalog-title">BARBERSHOP</h3>
+          <p class="catalog-description">Сайт салона красоты. Для мужчин, да</p>
+          <a href="#" class="buttone">9900руб.</a>
+          <a href="catalog-item">
+                <img src="#" alt="Барбершоп">
+          </a>
+        </li>
+        <li class="catalog-item">
+          <h3 class="catalog-title">MISHKA</h3>
+          <p class="catalog-description">Милые штуки ручной работы для дома</p>
+          <a href="#" class="buttone">9900руб.</a>
+          <a href="catalog-item">
+                <img src="#" alt="Магазин для дома">
+          </a>
+        </li> 
+        <li class="catalog-item">
+          <h3 class="catalog-title">A PLUS</h3>
+          <p class="catalog-description">Лендинг курсов повышения квалификации</p>
+          <a href="#" class="buttone">9900руб.</a>
+          <a href="catalog-item">
+                <img src="#" alt="Курсы">
+          </a>
+        </li>
+        <li class="catalog-item">
+          <h3 class="catalog-title">BEAR</h3>
+          <p class="catalog-description">Крафтовый квас всему голова</p>
+          <a href="#" class="buttone">9900руб.</a>
+          <a href="catalog-item">
+                <img src="#" alt="Магазин пива">
+          </a>
+        </li>      
+        </ul>
+        <ul class="paggination">
+            <li class="paggination-item-current"><a>1</a></li>
+            <li class="paggination-item"><a href="#">2</a></li>
+            <li class="paggination-item"><a href="#">3</a></li>
+            <li class="paggination-item--active"><a href="#">Следующая</a></li>
+        </ul>
+     </section>
+    </main>
+    <footer class="main-footer">
+            <h3 class="title">NЁRDS DISIGN STUDIO</h3>
+            <p class="contacts">191186,Санкт-Петербруг,
+            ул.Б.Конюшенная, д.19/8,
+            тел. +7(812)275-75-75
+          </p>
+          <a class="button" href="#">Напишите нам</a>
+          <a href="map.html"></a>
+          <div class="footer-social">
+            <ul class="social">
+              <li><a class="social-item" href="#">Вконтакте</a></li>
+              <li><a class="social-item" href="#">Фейсбук</a></li>
+              <li><a class="social-item" href="#">Инстаграм</a></li>
+            </ul>
+          </div>
+          <div class="profits">
+            <h2 class="profits-title">Давайте дружить,это выгодно!</h2>
+            <p class="profits-description">Скидка 10% для друзей из социальных сетей</p>
+          </div>
+        </footer>
 </body>
 </html>
