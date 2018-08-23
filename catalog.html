@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-nav">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo-1.svg" height="50" width="50" alt="Nёrd's">
+          <img src="img/logo-1.svg" height="65" width="160" alt="Nёrd's">
         </a>
         <ul class="site-nav">
          <li class="site-nav-item --active"><a href="#">Студия</a></li>
@@ -24,14 +24,41 @@
     <main class="container">
      <h1 class="page-title">Магазин готовых шаблонов</h1>
      <section class="filter">
-         <h2 class="filter-title">Стоимость:</h2>
-         <!--здесь будет форма-->
+         <h2 class="filter-price">Стоимость:</h2>
+         <form action="/echo" method="post">
+          <div class="price">
+          <input type="range" class="price-range>
+          </div>
+           <div class="half-width output-area">
+           ОТ <output name="ratingoutput">0</output>
+          </div>
+          <div class="half-width output-area">
+            ДО <output name="ratingoutput">15000</output>
+          </div>
+          <div class="net">
+            <h2 class="filter-net">Сетка:</h2>
+            <input type="radio" name="net" checked>Адаптивная
+            <input type="radio" name="net">Фиксированная
+            <input type="radio" name="net">Резиновая
+          </div>
+          <div>
+            <h2 class="filter-features">Особенности:</h2>
+            <input type="checkbox" name="net" checked>Слайдер
+            <input type="checkbox" name="net">Блок преимуществ
+            <input type="checkbox" name="net" checked>Новости
+            <input type="checkbox" name="net">Галлерия
+            <input type="checkbox" name="net">Корзина
+          </div>
+          <div class="show">
+            <input type="submit" name="show" value="Показать">
+          </div>
+         </form>
      </section>
      <ul class="sorting">
          <li class="sorting-item --current">По цене</li>
          <li class="sorting-item"><a href="catalog.html">По типу</a></li>
          <li class="sorting-item"><a href="catalog.html">По названию</a></li>
-         <!--Здесь кнопки вверх-вниз-->
+         <!--Здесь кнопки вверх-вниз Должны быть ссылки? -->
      </ul>
      <section class="catalog">
         <h2 class="visually-hidden">Список проектов</h2>
