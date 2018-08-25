@@ -22,10 +22,10 @@
     </nav>
     </header>  
     <main class="container">
-     <h1 class="page-title">Магазин готовых шаблонов</h1>
+     <h1>Магазин готовых шаблонов</h1>
      <section class="filter">
-         <h2 class="filter-price">Стоимость:</h2>
-         <form action="/echo" method="post">
+         <h2>Стоимость:</h2>
+         <form class="!!" action="/echo" method="get">
           <div class="price">
           <input type="range" class="price-range>
           </div>
@@ -35,23 +35,49 @@
           <div class="half-width output-area">
             ДО <output name="ratingoutput">15000</output>
           </div>
-          <div class="net">
-            <h2 class="filter-net">Сетка:</h2>
-            <input type="radio" name="net" checked>Адаптивная
-            <input type="radio" name="net">Фиксированная
-            <input type="radio" name="net">Резиновая
-          </div>
-          <div>
-            <h2 class="filter-features">Особенности:</h2>
-            <input type="checkbox" name="net" checked>Слайдер
-            <input type="checkbox" name="net">Блок преимуществ
-            <input type="checkbox" name="net" checked>Новости
-            <input type="checkbox" name="net">Галлерия
-            <input type="checkbox" name="net">Корзина
-          </div>
-          <div class="show">
-            <input type="submit" name="show" value="Показать">
-          </div>
+          <fieldset>
+            <legend>Сетка</legend>
+            <ul>
+              <li class="filter-net">
+                <input class="visually-hidden" type="radio" name="net" value="adaptive" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-net">
+                <input class="visually-hidden" type="radio" name="net" value="fixed" id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-net">
+                <input class="visually-hidden" type="radio" name="net" value="rubber" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Особенности</legend>
+             <ul>
+              <li class="filter-features">
+                <input type="checkbox" name="filter-group"  value="slader" id="filter-slader">
+                <label for="filter-slader">Слайдер</label>
+              </li>
+              <li>
+                <input type="checkbox" name="filter-group" value="features" id="filter-features">
+                <label for="filter-features">Блок преимуществ</label>
+              </li>
+              <li>
+                <input type="checkbox" name="filter-group" value="news" id="filter-news">
+                <label for="filter-news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="filter-group" value="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галлерия</label>
+              </li>
+              <li>
+                <input type="checkbox" name="filter-group" value="garbage" id="filter-garbage">
+                <label for="filter-garbage">Корзина</label>
+              </li>
+             </ul>
+             </fieldset>
+             <button class="button" type="submit">Отправить</button>
          </form>
      </section>
      <ul class="sorting">
@@ -69,7 +95,7 @@
         <!--Здесь будет форма-->
         <ul class="catalog-list">
          <li class="catalog-item">
-          <img src="img/catalog-sedona.jpg" height="576px" width="360px" alt="Сайт для туристов">
+          <img src="img/catalog-sedona.jpg" height="576 px" width="360 px" alt="Сайт для туристов">
             <div>
           <h3 class="catalog-title">SEDONA</h3>
           <p class="catalog-text">Информационный сайт для туристов</p>
@@ -77,7 +103,7 @@
             </div>
          </li>
          <li class="catalog-item">
-          <img src="img/catalog-pink.jpg" height="576px" width="360px" alt="Лендинг">
+          <img src="img/catalog-pink.jpg" height="576 px" width="360 px" alt="Лендинг">
           <div>
            <h3 class="catalog-title">PINK APP</h3>
            <p class="catalog-text">Продуктовый лендинг приложения для iOS и Android</p>
@@ -85,7 +111,7 @@
           </div>
          </li>
         <li class="catalog-item">
-          <img src="img/catalog-barbershop.jpg" height="576px" width="360px" alt="Барбершоп">
+          <img src="img/catalog-barbershop.jpg" height="576 px" width="360 px" alt="Барбершоп">
           <div>
            <h3 class="catalog-title">BARBERSHOP</h3>
            <p class="catalog-text">Сайт салона красоты. Для мужчин, да</p>
@@ -93,7 +119,7 @@
           </div>  
         </li>
         <li class="catalog-item">
-          <img src="img/catalog-mishka.jpg" height="576px" width="360px" alt="Магазин для дома">
+          <img src="img/catalog-mishka.jpg" height="576 px" width="360 px" alt="Магазин для дома">
            <div>
           <h3 class="catalog-title">MISHKA</h3>
           <p class="catalog-text">Милые штуки ручной работы для дома</p>
@@ -101,7 +127,7 @@
            </div>   
          </li> 
         <li class="catalog-item">
-          <img src="img/catalog-aplus.jpg" height="576px" width="360px" alt="Курсы">
+          <img src="img/catalog-aplus.jpg" height="576 px" width="360 px" alt="Курсы">
             <div>
           <h3 class="catalog-title">A PLUS</h3>
           <p class="catalog-text">Лендинг курсов повышения квалификации</p>
@@ -109,7 +135,7 @@
             </div>   
         </li>
         <li class="catalog-item">
-            <img src="img/catalog-kvast.jpg" height="576px" width="360px" alt="Магазин пива">
+            <img src="img/catalog-kvast.jpg" height="576 px" width="360 px" alt="Магазин пива">
             <div>
           <h3 class="catalog-title">BEAR</h3>
           <p class="catalog-text">Магазин пива</p>
@@ -134,9 +160,30 @@
             ул.Б.Конюшенная, д.19/8,</p>
             <p class="contacts-text">тел. +7(812)275-75-75
             </p>
-            <a class="button" href="#">Напишите нам</a>
+            <a class="button" href="#Openmodal">Напишите нам</a>
+            <section class="modal modal-form">
+              <h2>Напишите нам</h2>
+               <form class="name-form" action="/echo" method="post">
+                 <div class="modal-half-width">
+                   <label for="form-name">Ваше имя:</label>
+                     <input type="text" name="name" id="form-name" value="Имя Фамилия">
+                  </div>
+                  <div class="modal-half-width">
+                   <label for="form-email">Ваш e-mail:</label>
+                     <input type="email" name="email" id="form-email" value="email@example.com">
+                  </div>
+                  <div class="modal-half-width">
+                   <label for="form-note">Текст письма:</label>
+                    <textarea rows="5" name="note" id="form-note">В свободной форме</textarea>
+                  </div>
+                  <button class="button" type="submit">Отправить</button>
+                <span class="modal-close">x</span>
+               </form>
+             </section>
          </article>
-         <img src="img/map.png" height="416px" width="1440px" alt="карта">
+         <p><img src="img/map.png" height="416px" width="1440px" alt="Офис компании: 191186,Санкт-Петербруг,
+          ул.Б.Конюшенная, д.19/8">
+          </p>
           <div class="footer-social">
             <ul class="social">
               <li class="social-item"><a href="img/social-vk.svg">Вконтакте</a></li>
