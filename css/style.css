@@ -10,21 +10,30 @@ body {
     
     background-color: #ffffff;
 }
+.inner-page {
+    color: #ffffff;
+}
 a {
     text-decoration: none;
 }
-.main-header-logo a {
-    color: #000000;
+.main-header-logo img {
+    opacity: 1;
   }
-.main-header-logo a:hover {
-  color: #283136;
+.main-header-logo img:hover {
+    opacity: 0.8;
+    
 }
-.main-header-logo a:focus {
-  color: #a6a6a6;
+.main-header-logo img:active{
+    opacity: 0.3;
+
 }
 .main-nav {
+  background-color: #eeeeee;
+}
+.site-nav,
+.user-nav {
   font-size: 16px;
-  line-height:30px;
+  line-height: 30px;
   color: #000000;
   background-color: #eeeeee;
 }
@@ -38,20 +47,12 @@ a {
 }
 .site-nav a:hover,
 .user-nav a:hover {
-  
   color: #fb565a;
-}
-.site-nav a:focus,
-.user-nav a:focus {
-  
-  color: #bdbdbd;
 }
 .site-nav a:active,
 .user-nav a:active {
-  text-decoration: underline;
-  color: #000000;
+  opacity: 0.1;
 }
-
 .button  {
   
   text-align: center;
@@ -66,7 +67,7 @@ a {
   background-color: #e74246;
   color: #ffffff;
 }
-.button:focus{
+.button:active{
   
   text-align: center;
   text-transform: uppercase;
@@ -76,74 +77,121 @@ a {
 .services {
     list-style: none;
 }
-.button-web {
+.button-web
+.button-app,
+.button-present {
     text-align: center;
     text-transform: uppercase;
+}
+
+.button-web {
     background-color: #fb565a;
     color: #ffffff;
 }
 .button-web:hover {
-   text-align: center;
-   text-transform: uppercase;
    background-color: #e74246;
    color: #ffffff;
 }
-.button-web:focus {
-    text-align: center;
-    text-transform: uppercase;
+.button-web:active {
     background-color: #d7373b;
     color: #e48789;
 }
 .button-app {
-    text-align: center;
-    text-transform: uppercase;
     background-color: #00ca74;
     color: #ffffff;
 }
 .button-app:hover {
-   text-align: center;
-   text-transform: uppercase;
    background-color: #00bc6c;
    color: #ffffff;
 }
-.button-app:focus {
-    text-align: center;
-    text-transform: uppercase;
+.button-app:active {
     background-color: #00aa62;
     color: #5ebf8d;
 }
 .button-present {
-    text-align: center;
-    text-transform: uppercase;
     background-color: #efc84a;
     color: #ffffff;
 }
 .button-present:hover {
-   text-align: center;
-   text-transform: uppercase;
    background-color: #eab534;
    color: #ffffff;
 }
-.button-present:focus {
-    text-align: center;
-    text-transform: uppercase;
+.button-present:active {
     background-color: #e5a722;
     color: #ebbc6a;
 }
-.partners {
-    list-style: none;
+.partners img {
+    opacity: 0.2;
 }
-.partners   {
-    background-color: #ffffff;
-    color: #d3d3d3;
+.partners img:hover {
+    opacity: 1;
 }
-.partners :hover {
-    background-color: #ffffff;
+.partners img:active {
+    opacity: 0.1;
+}
+<!-- 
+.social-item a {
+    opacity: 0.1;
+   
+}
+.social-item a:hover {
+    
+}
+.social-item a:active {
+   
+}
+-->
+.modal-close {
+    color: #fecccd;
+}
+.modal-close :hover{
+    color: #fb565a;
+}
+.modal-close :active{
+    color: #ffeeee;
+}
+.modal-half-width {
+    text-transform: capitalize;
     color: #000000;
+    font-size: 14px;
+    line-height: 18px;
+    border-color: #000000;
 }
-.partners :focus {
-    background-color: #ffffff;
-    color: #e5e5e5;
+.modal-half-width input[type=text] {
+    border-color: #d7dcde;
+    opacity: 0.35;
 }
-
-
+.modal-half-width input[type=text]:hover {
+    border-color: #b4b9bb;
+    opacity: 0.35;
+}
+.modal-half-width input[type=text]:focus {
+    border-color: #000000;
+    opacity: 1;
+}
+.input:invalid {
+    border-color: #d7373b;
+  }
+<!-- Невалидная форма  верно сделана? Не работает. -->
+.filter.button  {
+  
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #eeeeee;
+    color: #000000;
+  }
+ filter.button:hover {
+    
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #dfdfdf;
+    color: #000000;
+  }
+  filter.button:active{
+    
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #d5d5d5;
+    color: #a9a9a9;
+  }
+  <!-- кнопка показать в каталоге. Не получается подключить каталог-->
