@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -47,17 +50,17 @@
             <li class="services-item">
              <h3 class="services-title">Веб-сайты</h3>
              <p class="services-description">Мир никогда не будет прежним после того как увидите свой сайт!</p>
-             <a class="service-link" href="#">Заказать</a>
+             <a class="button-web" href="#">Заказать</a>
             </li>
             <li class="services-item">
               <h3 class="services-title">Приложения</h3>
               <p class="services-description">Покорите 10 приложений в AppStore и Google Play</p>
-              <a class="service-link" href="#">Заказать</a>
+              <a class="button-app" href="#">Заказать</a>
             </li>
             <li class="services-item">
               <h3 class="services-title">Презентации</h3>
               <p class="services-description">Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="service-link" href="#">Заказать</a>
+              <a class="button-present" href="#">Заказать</a>
             </li>
         </ul>
       </section>
@@ -104,8 +107,7 @@
               <p class="contacts-text">тел. +7(812)275-75-75
               </p>
               <a class="button" href="#Openmodal">Напишите нам</a>
-              <section class="modal modal-form">
-                <form class="name-form" action="/echo" method="post">
+                <form class="modal modal-form" action="/echo" method="post">
                   <h2>Напишите нам</h2>
                   <div class="modal-half-width">
                     <label for="form-name">Ваше имя:</label>
@@ -122,7 +124,6 @@
                    <button class="button" type="submit">Отправить</button>
                  <span class="modal-close">x</span>
                 </form>
-              </section>
            </article>
            <p><img src="img/map.png" height="416" width="1440" alt="Офис компании: 191186,Санкт-Петербруг,
            ул.Б.Конюшенная, д.19/8">
