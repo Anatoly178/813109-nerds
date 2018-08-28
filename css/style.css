@@ -11,20 +11,80 @@ body {
     background-color: #ffffff;
 }
 .inner-page {
-    color: #ffffff;
+  color: #ffffff;
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
+}
+h2 {
+  font-size: 45px;
+  line-height: 45px;
+  text-transform: none;
+  color: #000000;
+}
+.h2.feature-title {
+  font-size: 55px;
+  line-height: 55px;
+  text-transform: none;
+  color: #000000;
+}
+.feature-description,
+.services-description,
+.orders-description,
+.orders-list-item {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: none;
+  color: #000000;
+}
+.services-title{
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: none;
+  color: #000000;
+}
+.orders-title {
+  font-size: 45px;
+  line-height: 45px;
+  text-transform: none;
+  color: #000000;
+}
+.orders-catalog,
+.conditions-title {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+}
+dd {
+  font-size: 45px;
+  line-height: 10.6px;
+  text-transform: uppercase;
+  color: #000000;
+}
+dt {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: none;
+  color: #000000;
+}
+/*выше наверное не верно, так как просили через глобальные теги не делать.
+Понимаю что через псведокласс, но какой, пока не соображу*/
+.profits- {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: none;
+  color: #000000;
 }
 .main-header-logo img {
-    opacity: 1;
+  opacity: 1;
   }
 .main-header-logo img:hover {
-    opacity: 0.8;
+  opacity: 0.8;
     
 }
 .main-header-logo img:active{
-    opacity: 0.3;
+  opacity: 0.3;
 
 }
 .main-nav {
@@ -37,10 +97,6 @@ a {
   color: #000000;
   background-color: #eeeeee;
 }
-.site-nav,
-.user-nav {
-  list-style: none;
-}
 .site-nav a,
 .user-nav a {
   color: #000000
@@ -51,150 +107,194 @@ a {
 }
 .site-nav a:active,
 .user-nav a:active {
-  opacity: 0.1;
+  color: rgba(0, 0, 0, 0.3)
+}
+/* ниже это вроде как активность в каталоге?надо поменять класс?
+*/
+.site-nav-item a:focus,
+.user-nav-item a:focus {
+  text-decoration: underline;
+  text-decoration-color: #d7373b;
+  color: #000000;
 }
 .button  {
-  
+  font-size: 16px;
+  line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #fb565a;
-  color: #ffffff;
+  color: #fb565a;
+  background-color: #ffffff;
 }
 .button:hover {
-  
-  text-align: center;
-  text-transform: uppercase;
   background-color: #e74246;
-  color: #ffffff;
 }
 .button:active{
-  
-  text-align: center;
-  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
-  color: #e48789;
 }
 .services {
-    list-style: none;
+  list-style: none;
 }
-.button-web
+.button-web,
 .button-app,
 .button-present {
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
-.button-web:active
+.button-web:active,
 .button-app:active,
 .button-present:active {
-    color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 .button-web {
-    background-color: rgba(251, 86, 90, 1);
+  background-color: #fb565a;
 }
 .button-web:hover {
-    background-color: rgba(251, 86, 90, 1);
-   
+  background-color: #e74246;
 }
 .button-web:active {
-    background-color: rgba(251, 86, 90, 0.35);
+  background-color: #d7373b;
 }
 .button-app {
-   background-color: rgba(0, 202, 116, 1);
+  background-color: #00ca74;
 }
 .button-app:hover {
-  background-color: rgba(0, 202, 116, 1);
+  background-color: #00bc6c;
    
 }
 .button-app:active {
-    background-color: rgba(0, 202, 116, 0,35);
+  background-color: #00aa62;
    
 }
 .button-present {
-    background-color: rgba(239, 200, 274, 1);
+  background-color: #efc84a;
     
 }
 .button-present:hover {
-    background-color: rgba(239, 200, 274, 1);
+  background-color: #eab534;
    
 }
 .button-present:active {
-    background-color: rgba(239, 200, 274, 0,35);
+  background-color: #e5a722;
 }
 .partners img {
-    opacity: 0.2;
+  opacity: 0.2;
 }
 .partners img:hover {
-    opacity: 1;
+  opacity: 1;
 }
 .partners img:active {
-    opacity: 0.1;
+  opacity: 0.1;
 }
-<!-- 
-.social-item a {
-    opacity: 0.1;
-   
+.social-item a  {
+  background-color: #e1e1e1;
+  color: #ffffff;
 }
 .social-item a:hover {
-    
+  background-color: #e74246;  
 }
 .social-item a:active {
-   
+  opacity: 0.35; 
+  background-color: #d7373b;
 }
--->
+.profits-title {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: none;
+  color: #000000;
+}
 .modal-close {
-    color: #fecccd;
+  color: #fecccd;
 }
 .modal-close :hover{
-    color: #fb565a;
+  color: #fb565a;
 }
 .modal-close :active{
-    color: #ffeeee;
+  color: #ffeeee;
 }
 .modal-half-width {
-    text-transform: capitalize;
-    color: #000000;
-    font-size: 14px;
-    line-height: 18px;
-    border-color: #000000;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: #000000;
+  border-color: #000000;
 }
 .modal-half-width input[type=text] {
-    border-color: #d7dcde;
-    opacity: 0.35;
+  opacity: 0.35;
+  border-color: #d7dcde;
+    
 }
 .modal-half-width input[type=text]:hover {
-    border-color: #b4b9bb;
-    opacity: 0.35;
+  opacity: 0.35;
+  border-color: #b4b9bb;
+    
 }
 .modal-half-width input[type=text]:focus {
-    border-color: #000000;
-    opacity: 1;
+  opacity: 1;
+  border-color: #000000;
+    
 }
 .input:invalid {
-    border-color: #d7373b;
+  border-color: #d7373b;
   }
-<!-- Невалидная форма  верно сделана? Не работает. -->
-.filter.button  {
-  
-    text-align: center;
+/* Невалидная форма  верно сделана? Не работает */
+.button-form  {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #eeeeee;
+  }
+.button-form:hover {
+   background-color: #dfdfdf;
+  }
+.button-form:active{
+  color: rgba( 0, 0, 0, 0.3)
+  background-color: #d5d5d5;
+  }
+  .sorting {
+   font-size: 14px;
+   line-height: 18px;
+   text-transform: uppercase;
+   color: #000000;
+  }
+  .sorting-option-item,
+  .sorting-direction-item {
+    color: rgba( 0, 0, 0, 0.3)
+  }
+  .sorting-option-item:hover,
+  .sorting-direction-item:hover {
+   color: rgba( 0, 0, 0, 0.6)
+   
+  }
+  .sorting-option-item:active,
+  .sorting-option-item:focus
+  .sorting-direction-item:active,
+  .sorting-direction-item:focus{
+    color: #000000
+  }
+  .current  {
+    font-size: 14px;
+    line-height: 16px;
     text-transform: uppercase;
+    color: #000000;
     background-color: #eeeeee;
-    color: #000000;
   }
- filter.button:hover {
-    
-    text-align: center;
-    text-transform: uppercase;
+  .current:hover {
     background-color: #dfdfdf;
-    color: #000000;
   }
-  filter.button:active{
-    
-    text-align: center;
-    text-transform: uppercase;
+  .current:active {
     background-color: #d5d5d5;
-    color: #a9a9a9;
+    color: rgba( 255, 255, 255, 0.3)
   }
-  <!-- кнопка показать в каталоге. Не получается подключить каталог-->
+  .current:focus {
+    background-color: #ffffff;
+    border-color: #eeeeee;
+  }
+/*здесь не понимаю как второй класс верно поставить, чтоб сработал, 
+много как пробывал*/
+
