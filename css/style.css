@@ -80,45 +80,48 @@ a {
 .button-web
 .button-app,
 .button-present {
+    font-size: 16px;
+    line-height: 18px;
     text-align: center;
     text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
 }
-
+.button-web:active
+.button-app:active,
+.button-present:active {
+    color: rgba(255, 255, 255, 0.3);
+}
 .button-web {
-    background-color: #fb565a;
-    color: #ffffff;
+    background-color: rgba(251, 86, 90, 1);
 }
 .button-web:hover {
-   background-color: #e74246;
-   color: #ffffff;
+    background-color: rgba(251, 86, 90, 1);
+   
 }
 .button-web:active {
-    background-color: #d7373b;
-    color: #e48789;
+    background-color: rgba(251, 86, 90, 0.35);
 }
 .button-app {
-    background-color: #00ca74;
-    color: #ffffff;
+   background-color: rgba(0, 202, 116, 1);
 }
 .button-app:hover {
-   background-color: #00bc6c;
-   color: #ffffff;
+  background-color: rgba(0, 202, 116, 1);
+   
 }
 .button-app:active {
-    background-color: #00aa62;
-    color: #5ebf8d;
+    background-color: rgba(0, 202, 116, 0,35);
+   
 }
 .button-present {
-    background-color: #efc84a;
-    color: #ffffff;
+    background-color: rgba(239, 200, 274, 1);
+    
 }
 .button-present:hover {
-   background-color: #eab534;
-   color: #ffffff;
+    background-color: rgba(239, 200, 274, 1);
+   
 }
 .button-present:active {
-    background-color: #e5a722;
-    color: #ebbc6a;
+    background-color: rgba(239, 200, 274, 0,35);
 }
 .partners img {
     opacity: 0.2;
