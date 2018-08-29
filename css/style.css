@@ -10,19 +10,10 @@ body {
     
     background-color: #ffffff;
 }
-.inner-page {
-  color: #ffffff;
-}
 a {
   text-decoration: none;
 }
-h2 {
-  font-size: 45px;
-  line-height: 45px;
-  text-transform: none;
-  color: #000000;
-}
-.h2.feature-title {
+.feature-title {
   font-size: 55px;
   line-height: 55px;
   text-transform: none;
@@ -56,21 +47,19 @@ h2 {
   text-transform: uppercase;
   color: #000000;
 }
-dd {
+.conditions-list-percent {
   font-size: 45px;
   line-height: 10.6px;
   text-transform: uppercase;
   color: #000000;
 }
-dt {
+.conditions-list-item {
   font-size: 16px;
   line-height: 18px;
   text-transform: none;
   color: #000000;
 }
-/*выше наверное не верно, так как просили через глобальные теги не делать.
-Понимаю что через псведокласс, но какой, пока не соображу*/
-.profits- {
+.profits {
   font-size: 16px;
   line-height: 22px;
   text-transform: none;
@@ -97,22 +86,20 @@ dt {
   color: #000000;
   background-color: #eeeeee;
 }
-.site-nav a,
-.user-nav a {
+.site-nav-item,
+.user-nav-item {
   color: #000000
 }
-.site-nav a:hover,
-.user-nav a:hover {
+.site-nav-item:hover,
+.user-nav-item:hover {
   color: #fb565a;
 }
-.site-nav a:active,
-.user-nav a:active {
+.site-nav-item:active,
+.user-nav-item:active {
   color: rgba(0, 0, 0, 0.3)
 }
-/* ниже это вроде как активность в каталоге?надо поменять класс?
-*/
-.site-nav-item a:focus,
-.user-nav-item a:focus {
+.site-nav-item:focus,
+.user-nav-item:focus {
   text-decoration: underline;
   text-decoration-color: #d7373b;
   color: #000000;
@@ -122,8 +109,8 @@ dt {
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
-  color: #fb565a;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #fb565a;
 }
 .button:hover {
   background-color: #e74246;
@@ -253,48 +240,24 @@ dt {
    background-color: #dfdfdf;
   }
 .button-form:active{
-  color: rgba( 0, 0, 0, 0.3)
+  color: rgba( 0, 0, 0, 0.3);
   background-color: #d5d5d5;
   }
-  .sorting {
-   font-size: 14px;
-   line-height: 18px;
-   text-transform: uppercase;
-   color: #000000;
+.sorting-option-item a,
+.sorting-direction-item a {
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: rgba( 0, 0, 0, 0.3);
   }
-  .sorting-option-item,
-  .sorting-direction-item {
-    color: rgba( 0, 0, 0, 0.3)
+.sorting-option-item a:hover,
+.sorting-direction-item a:hover {
+  color: rgba( 0, 0, 0, 0.6);
   }
-  .sorting-option-item:hover,
-  .sorting-direction-item:hover {
-   color: rgba( 0, 0, 0, 0.6)
-   
-  }
-  .sorting-option-item:active,
-  .sorting-option-item:focus
-  .sorting-direction-item:active,
-  .sorting-direction-item:focus{
-    color: #000000
-  }
-  .current  {
-    font-size: 14px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: #000000;
-    background-color: #eeeeee;
-  }
-  .current:hover {
-    background-color: #dfdfdf;
-  }
-  .current:active {
-    background-color: #d5d5d5;
-    color: rgba( 255, 255, 255, 0.3)
-  }
-  .current:focus {
-    background-color: #ffffff;
-    border-color: #eeeeee;
-  }
-/*здесь не понимаю как второй класс верно поставить, чтоб сработал, 
-много как пробывал*/
+.sorting-option-item.--current a,
+.sorting-option-item a:active,
+.sorting-direction-item a:active {
+  color: #000000;
+ }
+
 
