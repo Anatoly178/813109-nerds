@@ -46,6 +46,7 @@ a {
 .conditions-list-percent {
   font-size: 45px;
   line-height: 10.6px;
+  font-weight: bold;
   text-transform: uppercase;
   color: #000000;
 }
@@ -74,26 +75,26 @@ a {
   background-color: #eeeeee;
 }
 .site-nav,
-.user-nav {
+.user-nav  {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
   background-color: #eeeeee;
 }
-.site-nav-item,
-.user-nav-item {
+.site-nav-item a,
+.user-nav-item a {
   color: #000000
 }
-.site-nav-item:hover,
-.user-nav-item:hover {
+.site-nav-item a:hover,
+.user-nav-item a:hover {
   color: #fb565a;
 }
-.site-nav-item:active,
-.user-nav-item:active {
+.site-nav-item a:active,
+.user-nav-item a:active {
   color: rgba(0, 0, 0, 0.3)
 }
-.site-nav-item:focus,
-.user-nav-item:focus {
+.site-nav-item a:focus,
+.user-nav-item a:focus {
   text-decoration: underline;
   text-decoration-color: #d7373b;
   color: #000000;
@@ -259,21 +260,33 @@ a {
   color: #ffffff ;
   background-color: #fb565a;
 }
+.button-write:hover {
+  color: #ffffff;
+  background-color: #e74246;
+}
+.button-write:active; {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
 .pagination {
  font-size: 14px;
  line-height: 18px;
  list-style-type: none;
  text-align: center;
+ color: #000000;
 }
 
 .pagination-item.--current a {
 background-color:#ffffff;
+color: #000000;
 border: 1px solid #eeeeee;
 }
 .pagination-item a {
+  color: #000000;
   background-color: #eeeeee;
 }
 .pagination-item a:hover {
+  color: #000000;
   background-color: #dfdfdf;
 }
 .pagination-item a:active {
@@ -298,7 +311,7 @@ border: 1px solid #eeeeee;
 .contacts-text {
   font-size: 16px;
   line-height: 18px;
-  color: #000000;
+  color: #ffffff;
 }
 /*
 .filter-net input[type="radio"],
@@ -330,12 +343,15 @@ border: 1px solid #eeeeee;
   line-height: 20px;
 }
 
-.visually-hidden-net-input:+ label {
+.filter-adaptive input [type="radio"],
+.filter-adaptive input [type="radio"] + checked {
   color: #999999;
 }
-.visually-hidden-net-input:hover + label {
+.filter-adaptive input [type="radio"]:hover,
+.filter-adaptive input [type="radio"]:hover + checked {
   color: #000000;
 }
-.visually-hidden-net-input:disabled + label {
-  color: rgba(229, 229, 229, 0.3)
+.filter-adaptive input [type="radio"]:disabled,
+.filter-adaptive input [type="radio"]:disabled + checked {
+  color: rgba(229, 229, 229, 0.3);
 }
