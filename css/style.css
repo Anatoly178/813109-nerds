@@ -6,37 +6,42 @@ body {
     line-height:24px;
     font-weight:500;
     color: #000000;
-    
-    
     background-color: #ffffff;
 }
 a {
   text-decoration: none;
 }
 .main-header {
-
-  margin-bottom: 80px;
+  
+  margin-bottom: 86px;
   background-color: #eeeeee;
+
 }
 .main-nav {
   font-size: 16px;
   line-height: 30px;
+  display: flex;
 }
 .site-nav,
 .user-nav  {
   list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 92px;
+}
+.user-nav {
+ padding: 92px 20px 102px 280px;
 }
 .site-nav-item a,
 .user-nav-item a {
   color: #000000;
+  
 }
 .site-nav-item a:hover,
 .user-nav-item a:hover {
   color: #fb565a;
 }
-.feature {
-  margin-bottom: 80px;
-}
+
 .site-nav-item a:focus,
 .user-nav-item a:focus {
   color: rgba(0, 0, 0, 0.3);
@@ -48,10 +53,25 @@ a {
   text-decoration-color: #d7373b;
   color: #000000;
 }
+.features {
+    display: flex;
+    padding-bottom: 80px;
+}
 .feature-title {
   font-size: 55px;
   line-height: 55px;
   color: #000000;
+}
+.services-list {
+ list-style: none;
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 80px;
+}
+.services-item {
+  width: 300px;
+  padding: 0 20px 0 20px;
+  min-height: 170px;
 }
 .feature-description,
 .services-description,
@@ -65,6 +85,21 @@ a {
   font-size: 24px;
   line-height: 30px;
   color: #000000;
+}
+  .stastic {
+  
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.orders,
+.conditions {
+  width: 660px;
+  padding: 0 20px 0 20px;
+}
+.partners {
+ display: flex;
+ justify-content: space-around;
 }
 .orders-title {
   font-size: 45px;
@@ -99,7 +134,7 @@ a {
   opacity: 1;
   width: 160px;
   height: 65px;
-  
+  padding: 81.5px 200px 86px 20px;
   }
 .main-header-logo img:hover {
   opacity: 0.8;
@@ -115,7 +150,7 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #fb565a;
-  box-shadow:  3px 0px 7px rgba(251, 86, 90, 0.35);
+  
 }
 .button:hover {
   background-color: #e74246;
@@ -123,6 +158,7 @@ a {
 .button:active{
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
+  box-shadow:  3px 0px 7px rgba(251, 86, 90, 0.35);
 }
 .services {
   list-style: none;
@@ -143,11 +179,11 @@ a {
 }
 .button-web {
   background-color: #fb565a;
-  box-shadow:  3px 0px 7px rgba(251, 86, 90, 0.35);
+  
 }
 .button-web:hover {
   background-color: #e74246;
-  box-shadow:  3px 0px 7px rgba(251, 86, 90, 0.35);
+  
 }
 .button-web:active {
   background-color: #d7373b;
@@ -155,11 +191,11 @@ a {
 }
 .button-app {
   background-color: #00ca74;
-  box-shadow:  3px 0px 7px rgba(0, 202, 116, 0.35);
+  
 }
 .button-app:hover {
   background-color: #00bc6c;
-  box-shadow:  3px 0px 7px rgba(0, 202, 116, 0.35);
+  
 }
 .button-app:active {
   background-color: #00aa62;
@@ -167,13 +203,11 @@ a {
 }
 .button-present {
   background-color: #efc84a;
-  box-shadow:  3px 0px 7px rgba(239, 200, 74, 0.35);
+
 }
 .button-present:hover {
-  background-color: #eab534;
-  box-shadow:  3px 0px 7px rgba(239, 200, 74, 0.35);
+  background-color: #eab534;  
 } 
-
 .button-present:active {
   background-color: #e5a722;
   box-shadow:  3px 0px 7px rgba(239, 200, 74, 0.35);
@@ -244,7 +278,6 @@ a {
   text-transform: uppercase;
   color: #000000;
   background-color: #eeeeee;
-  box-shadow:  3px 0px 7px rgba(238, 238, 238, 0.35);
   }
 .button-form:hover {
    background-color: #dfdfdf;
@@ -252,6 +285,7 @@ a {
 .button-form:active{
   color: rgba( 0, 0, 0, 0.3);
   background-color: #d5d5d5;
+  box-shadow:  3px 0px 7px rgba(238, 238, 238, 0.35);
   }
 .sorting-option-item a,
 .sorting-direction-item a {
@@ -276,7 +310,6 @@ a {
   text-transform: uppercase;
   color: #ffffff ;
   background-color: #fb565a;
-  box-shadow:  3px 0px 7px rgba(251, 86, 90, 0.35);
 }
 .button-write:hover {
   color: #ffffff;
@@ -285,6 +318,7 @@ a {
 .button-write:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
+  box-shadow:  3px 0px 7px rgba(251, 86, 90, 0.35);
 }
 .pagination {
  font-size: 14px;
@@ -292,7 +326,6 @@ a {
  list-style-type: none;
  text-align: center;
  color: #000000;
- box-shadow:  3px 0px 7px rgba(238, 238, 238, 0.35);
 }
 .pagination-item.--current a {
 background-color:#ffffff;
@@ -310,6 +343,7 @@ border: 1px solid #eeeeee;
 .pagination-item a:active {
   background-color: #d5d5d5;
   color: rgba( 0, 0, 0, 0.3);
+  box-shadow:  3px 0px 7px rgba(238, 238, 238, 0.35);
 }
 .catalog-title {
  font-size: 18px;
