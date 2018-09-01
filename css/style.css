@@ -331,19 +331,6 @@ border: 1px solid #eeeeee;
   line-height: 18px;
   color: #666666;
 }
-/*
-.filter-net input[type="radio"],
-.filter-net input[type="radio" :checked] {
-  background-color: #b8b8b8;
-}
-.filter-net input[type="radio"]:hover,
-.filter-net input[type="radio":checked]:hover {
-  background-color: #000000;
-}
-.filter-net input[type="radio"],
-.filter-net input[type="radio" :checked] {
-  background-color: #b8b8b8;
-}*/
 .page-title {
   font-size: 55px;
  line-height: 55px;
