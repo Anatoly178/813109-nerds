@@ -12,15 +12,14 @@ a {
   text-decoration: none;
 }
 .main-header {
-  
   margin-bottom: 86px;
   background-color: #eeeeee;
-
 }
 .main-nav {
   font-size: 16px;
   line-height: 30px;
   display: flex;
+  flex-wrap: nowrap;
 }
 .site-nav,
 .user-nav  {
@@ -30,30 +29,33 @@ a {
   padding: 92px;
 }
 .user-nav {
- padding: 92px 20px 102px 280px;
+ 
 }
 .site-nav-item a,
 .user-nav-item a {
+  display: block;
   color: #000000;
-  
+  padding: 80px 20px;
 }
 .site-nav-item a:hover,
 .user-nav-item a:hover {
   color: #fb565a;
 }
 
-.site-nav-item a:focus,
-.user-nav-item a:focus {
-  color: rgba(0, 0, 0, 0.3);
-}
-.site-nav-item.--active a,
 .site-nav-item a:active,
 .user-nav-item a:active {
-  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+ .site-nav-item.--current:focus,
+ .site-nav-item a:focus,
+ .user-nav-item a:focus {
   text-decoration-color: #d7373b;
+  text-decoration: underline;
   color: #000000;
 }
 .features {
+    
     display: flex;
     padding-bottom: 80px;
 }
